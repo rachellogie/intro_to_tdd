@@ -1,5 +1,7 @@
 class KeyValue
 
+  attr_accessor :key
+
   def initialize
     @hash = {}
   end
@@ -20,4 +22,9 @@ class KeyValue
     end
     return nil
   end
+
+  def list_keys
+    @hash.keys
+  end
+
 end

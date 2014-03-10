@@ -36,7 +36,21 @@ describe KeyValue do
     expected = hashy.removal("the_key")
 
     expect(actual). to eq (expected)
+  end
 
+  it "user can get a list of the keys" do
+    hashy = KeyValue.new
+    hashy.add_key_value(1, "banana")
+    hashy.add_key_value(2, "apple")
+    hashy.add_key_value(3, "orange")
+
+    actual = [1, 2, 3]
+
+    expected = hashy.list_keys
+
+    expect(actual). to eq (expected)
 
   end
+
+
 end
