@@ -27,4 +27,7 @@ class KeyValue
     @hash.keys
   end
 
+  def clear
+    @hash = {}
+  end
 end

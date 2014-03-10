@@ -49,8 +49,19 @@ describe KeyValue do
     expected = hashy.list_keys
 
     expect(actual). to eq (expected)
-
   end
 
+  it "can delete all keys and values" do
+    hashy = KeyValue.new
+    hashy.add_key_value(1, "banana")
+    hashy.add_key_value(2, "apple")
+    hashy.add_key_value(3, "orange")
+
+    actual = {}
+
+    expected = hashy.clear
+
+    expect(actual). to eq (expected)
+  end
 
 end
