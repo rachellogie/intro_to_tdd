@@ -13,4 +13,11 @@ class KeyValue
     value = @hash[key]
     value
   end
+
+  def removal(key)
+    if @hash.has_key? key
+      @hash.delete(key)
+    end
+    return nil
+  end
 end
