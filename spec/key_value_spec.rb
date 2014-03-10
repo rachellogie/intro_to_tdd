@@ -16,10 +16,9 @@ describe KeyValue do
   end
 
   it "you can get the value for a key" do
-    pending
     #setup
     hashy = KeyValue.new
-    hashy["the_key"] = "the_value"
+    hashy.add_key_value("the_key", "the_value")
 
     actual = "the_value"
 
