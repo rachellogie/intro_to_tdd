@@ -4,11 +4,10 @@ require "odd_even"
 
 describe OddEven do
 
-  it "returns an array using the input number" do
-    #setup
-    my_array = OddEven.new(4)
+  it "replaces the even numbers with 'even' and odd with odd" do
+    my_array = OddEven.new(5)
 
-    actual = [1, 2, 3, 4]
+    actual = ["odd", "even", "odd", "even", "odd"]
 
     expected = my_array.make_array
 
