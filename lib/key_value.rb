@@ -1,7 +1,5 @@
 class KeyValue
 
-  attr_accessor :key
-
   def initialize
     @hash = {}
   end

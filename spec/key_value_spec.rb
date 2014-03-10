@@ -36,6 +36,14 @@ describe KeyValue do
     expected = hashy.removal("the_key")
 
     expect(actual). to eq (expected)
+
+    #2nd expect could be trying to get a deleted key and it returns nil
+
+    expected2 = hashy.get_value("the_key")
+
+    expect(actual). to eq (expected2)
+
+
   end
 
   it "user can get a list of the keys" do
@@ -62,6 +70,14 @@ describe KeyValue do
     expected = hashy.clear
 
     expect(actual). to eq (expected)
+
+    #if the user tried to get 1 out of the hash it would be nil
+
+    actual2 = nil
+
+    expected2 = hashy.get_value(1)
+
+    expect(actual2). to eq (expected2)
   end
 
 end
