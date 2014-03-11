@@ -33,5 +33,15 @@ describe "NumericCalculator" do
     expect(actual). to eq expected
   end
 
+  it "can clear the memory and then get method returns 0" do
+    calc = NumericCalculator.new
+    calc.save(100)
+    calc.clear
 
+    actual = 0
+
+    expected = calc.get
+
+    expect(actual). to eq expected
+  end
 end
