@@ -5,7 +5,7 @@ describe StringCalculator do
 
   it "returns 0 for an empty string" do
     #setup
-    calc = StringCalculator.new
+    calc = StringCalculator.new(",")
 
     actual = 0
 
@@ -16,7 +16,7 @@ describe StringCalculator do
 
   it "returns the sum of the string" do
     #setup
-    calc = StringCalculator.new
+    calc = StringCalculator.new(",")
 
     actual = 16
 
