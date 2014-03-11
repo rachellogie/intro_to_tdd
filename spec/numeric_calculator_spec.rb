@@ -12,4 +12,14 @@ describe "NumericCalculator" do
     expect(actual). to eq expected
   end
 
+  it "has a subtract method that returns difference of two numbers" do
+    calc = NumericCalculator.new
+
+    actual = 45
+
+    expected = calc.subtract(52, 7)
+
+    expect(actual). to eq expected
+  end
+
 end
