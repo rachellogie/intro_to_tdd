@@ -22,4 +22,16 @@ describe "NumericCalculator" do
     expect(actual). to eq expected
   end
 
+  it "can save things to the calc's memory and get it later" do
+    calc = NumericCalculator.new
+    calc.save(89)
+
+    actual = 89
+
+    expected = calc.get
+
+    expect(actual). to eq expected
+  end
+
+
 end
